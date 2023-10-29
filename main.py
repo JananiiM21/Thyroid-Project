@@ -103,7 +103,7 @@ def predict():
 
 
     insert_query = """
-    INSERT INTO thyroid_data 
+    INSERT INTO thyroid_disease 
     (age, sex, TSH, T3, T4U, FTI, onthyroxine, queryonthyroxine, onantithyroidmedication, 
     sick, pregnant, thyroidsurgery, I131treatment, queryhypothyroid, queryhyperthyroid, 
     lithium, goitre, tumor, hypopituitary, psych, result) 
