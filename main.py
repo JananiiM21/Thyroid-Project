@@ -9,6 +9,7 @@ pickled_model = pickle.load(open('random_forest_model.pkl', 'rb'))
 
 app = Flask(__name__, template_folder='templates')
 
+app.config['PROPAGATE_EXCEPTIONS'] = True
 
 #app.config['MONGO_DBNAME'] = 'patient_database'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://j6qbx3bgjysst4jr:mcbsdk2s27ldf37t@frwahxxknm9kwy6c.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nkw2tiuvgv6ufu1z'
