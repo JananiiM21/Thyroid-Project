@@ -8,6 +8,8 @@ from flask_cors import CORS
 pickled_model = pickle.load(open('random_forest_model.pkl', 'rb'))
 
 app = Flask(__name__, template_folder='templates')
+CORS(app)
+
 
 app.config['PROPAGATE_EXCEPTIONS'] = True
 
